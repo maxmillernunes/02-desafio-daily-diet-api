@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "node --env-file=.env --experimental-strip-types --watch --no-warnings src/server.ts",
-    "start": "node --experimental-strip-types --no-warnings src/server.ts"
+    "start": "node --experimental-strip-types --no-warnings src/server.ts",
+    "knex": "node --experimental-strip-types --no-warnings ./node_modules/knex/bin/cli.js"
   },
   "keywords": [],
   "author": "",
