@@ -1,7 +1,9 @@
 import fastify from 'fastify'
+import cookie from '@fastify/cookie'
+import { usersRoutes } from './routes/users.ts'
 
 export const app = fastify()
 
-app.get('/', async (request, reply) => {
-  reply.status(200).send({ msg: 'Hello word' })
-})
+app.register(cookie)
+
+app.register(usersRoutes)
